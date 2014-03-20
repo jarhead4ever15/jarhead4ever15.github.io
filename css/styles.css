@@ -1,4 +1,8 @@
 /* Your Website Styles */
+body {
+	background: white;
+}
+
 
 .logo {
 	background: url(../img/logo.png);
@@ -9,7 +13,7 @@
 }
 
 .navigation {
-	background: tan;
+	background: white;
 	float: left;
 	height: 100px;
 	line-height: 50px;
@@ -66,22 +70,71 @@ nav a {
 	margin: 20px 0 20px 0;
 }
 
+.usmc {
+	text-align: center;
+	width: 302px;
 
+}
+.me {
+	width: 212px;
+	height: 292px;
+}
 
+.info,
+.objectives {
+	text-align: justify;
+	border: 1.5px solid #000 ;
+}
 
+footer p{
 
-
-
+	margin: 55px 0 16px 28px;
+}
 
 
 
 
 /* Media Queries */
 
+/* Desktop 960px */
+
+@media screen and (max-width: 960px) {
+	
+	
+}
+
+
+/* Tablet 768px */
+
+@media screen and (max-width: 768px) {
+	
+	.usmc {
+		width: 30%; 
+	}
+
+	.info, .objectives {
+		font-size: .85em;
+	}
+
+}
+
+/* Smartphones 480px */
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+	
+	.info, .objectives {
+		width: 100%;
+		font-size: 100%;
+	}
+}
+
+
+/* Other Media */
+
 @media screen and (max-width: 354px) {
 	
   .name p {
     margin-top: 72px;
   }
-    
+
 }
