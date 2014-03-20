@@ -1,7 +1,87 @@
 /* Your Website Styles */
 
+.logo {
+	background: url(../img/logo.png);
+	width: 100px;
+	height: 100px;
+	float: left;
 
-/* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
+}
+
+.navigation {
+	background: tan;
+	float: left;
+	height: 100px;
+	line-height: 50px;
+}
+
+.navigation li {
+	display: inline;
+	margin: 16px 0 38px 0;
+	padding: 20px;
+	
+}
+
+nav a {
+	margin-left: 40px;
+
+}
+
+/* SPRITE NAV IMAGE */
+.home {
+	background: url(../img/nav_sprite.png) no-repeat left center;
+	background-position: 0 10px;
+	margin-left: 40px;
+}
+
+.resume {
+	background: url(../img/nav_sprite.png) no-repeat left center;
+	background-position: 0 -102px;
+
+}
+
+.portfolio {
+	background: url(../img/nav_sprite.png) no-repeat left center;
+	background-position: 0 -228px;
+	margin-left: 20px;
+}
+
+.home:hover {
+	background-position: 0 -49px;
+}
+
+.resume:hover {
+	background-position: 0 -169px;
+}
+
+.portfolio:hover {
+	background-position: 0 -280px;
+}
+
+.name p {
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	margin: 20px 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 354px) {
+	
+  .name p {
+    margin-top: 72px;
+  }
+    
 }
