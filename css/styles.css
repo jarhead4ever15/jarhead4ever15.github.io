@@ -1,8 +1,9 @@
 /* Your Website Styles */
+/* CHECK THIS BEFORE TURNING IN! 
 body {
-	background: white;
+	background: url(../img/triangular.png);
 }
-
+*/
 
 .logo {
 	background: url(../img/logo.png);
@@ -13,17 +14,21 @@ body {
 }
 
 .navigation {
-	background: white;
+	background: cornflowerblue;
+	position: fixed;
 	float: left;
 	height: 100px;
 	line-height: 50px;
+	text-align: center;
 }
 
 .navigation li {
 	display: inline;
 	margin: 16px 0 38px 0;
 	padding: 20px;
-	
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 1.25em;
+	line-height: 65px;
 }
 
 nav a {
@@ -62,6 +67,11 @@ nav a {
 	background-position: 0 -280px;
 }
 
+.name {
+	margin-top: 108px;
+	margin-bottom: 10px;
+}
+
 .name p {
 	text-align: center;
 	font-size: 3em;
@@ -70,20 +80,30 @@ nav a {
 	margin: 20px 0 20px 0;
 }
 
+.name p:hover {
+text-shadow: -6px -1px 4px rgba(150, 150, 150, 1);
+}
+
 .usmc {
 	text-align: center;
 	width: 302px;
-
 }
 .me {
 	width: 212px;
 	height: 292px;
+	border-radius: 5%;
 }
 
 .info,
 .objectives {
 	text-align: justify;
-	border: 1.5px solid #000 ;
+	font-family: 'Nobile', sans-serif;
+	line-height: 25px;
+}
+
+.info h3,
+.objectives h3 {
+	text-decoration: underline;
 }
 
 footer p{
@@ -125,6 +145,15 @@ footer p{
 	.info, .objectives {
 		width: 100%;
 		font-size: 100%;
+	}
+
+	.navigation {
+		text-align: center;
+		height: 142px;
+	}
+
+	.name {
+		margin-top: 118px;
 	}
 }
 
