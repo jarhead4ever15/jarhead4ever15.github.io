@@ -1,10 +1,10 @@
 /* Your Website Styles */
-/* CHECK THIS BEFORE TURNING IN! 
+/* CHECK THIS BEFORE TURNING IN! */
 body {
-	background: url(../img/triangular.png);
+	background: url(../img/az_subtle.png);
 }
-*/
 
+/* INDEX PAGE STYLING */
 .logo {
 	background: url(../img/logo.png);
 	width: 100px;
@@ -14,14 +14,29 @@ body {
 }
 
 .navigation {
-	background: cornflowerblue;
+	background: url(../img/dark_wall.png);
 	position: fixed;
 	float: left;
 	height: 100px;
 	line-height: 50px;
-	text-align: center;
+	text-align: left;
 }
 
+.navigation li {
+	display: inline;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	margin-left: 40px;
+	font-size: 1.50em;
+	line-height: 65px;
+
+}
+
+.navigation a {
+	color: white;
+	text-decoration: none;
+}
+
+/* NO SPRITES MAYBE???? 
 .navigation li {
 	display: inline;
 	margin: 16px 0 38px 0;
@@ -35,8 +50,10 @@ nav a {
 	margin-left: 40px;
 
 }
+*/
 
 /* SPRITE NAV IMAGE */
+/* NO SPRITES MAYBE????
 .home {
 	background: url(../img/nav_sprite.png) no-repeat left center;
 	background-position: 0 10px;
@@ -66,6 +83,7 @@ nav a {
 .portfolio:hover {
 	background-position: 0 -280px;
 }
+*/
 
 .name {
 	margin-top: 108px;
@@ -81,6 +99,7 @@ nav a {
 }
 
 .name p:hover {
+	color: #B50909;
 text-shadow: -6px -1px 4px rgba(150, 150, 150, 1);
 }
 
@@ -106,11 +125,41 @@ text-shadow: -6px -1px 4px rgba(150, 150, 150, 1);
 	text-decoration: underline;
 }
 
-footer p{
+/* RESUME PAGE STYLING */
+.name img {
+	
+	width: 50px;
+	height: 50px;
+}
 
+
+#work {
+	margin-left: 0;
+	text-align: justify;
+}
+
+
+
+
+/* FOOTER */
+footer {
+	background: url(../img/dark_wall.png);
+}
+
+footer p{
+	color: #fff;
 	margin: 55px 0 16px 28px;
 }
 
+.facebook a {
+	background: url(../img/facebook.png) no-repeat;
+	float: right;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: -38px;
+	left: -150px;
+}
 
 
 
@@ -119,7 +168,10 @@ footer p{
 /* Desktop 960px */
 
 @media screen and (max-width: 960px) {
-	
+	.usmc {
+		margin: 0 0 0 0;
+		padding-left: 32px;
+	}
 	
 }
 
@@ -136,6 +188,10 @@ footer p{
 		font-size: .85em;
 	}
 
+	.personal p {
+		font-size: .95em;
+	}
+
 }
 
 /* Smartphones 480px */
@@ -145,15 +201,27 @@ footer p{
 	.info, .objectives {
 		width: 100%;
 		font-size: 100%;
+		margin-left: 4px;
 	}
 
-	.navigation {
+	.navigation li {
 		text-align: center;
-		height: 142px;
+		margin-left: 20px;
+		
 	}
 
 	.name {
+		font-size: .75em;
 		margin-top: 118px;
+	}
+
+	.usmc img {
+		width: 85%;
+		height: 85%;
+	}
+
+	.facebook a {
+		display: none;
 	}
 }
 
