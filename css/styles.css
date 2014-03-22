@@ -6,11 +6,10 @@ body {
 
 /* INDEX PAGE STYLING */
 .logo {
-	background: url(../img/logo.png);
+	background: url(../img/logo.png) no-repeat;
 	width: 100px;
 	height: 100px;
 	float: left;
-
 }
 
 .navigation {
@@ -20,6 +19,7 @@ body {
 	height: 100px;
 	line-height: 50px;
 	text-align: left;
+	padding: 11px 0 0 15px;
 }
 
 .navigation li {
@@ -125,9 +125,12 @@ text-shadow: -6px -1px 4px rgba(150, 150, 150, 1);
 	text-decoration: underline;
 }
 
+
+
+
+
 /* RESUME PAGE STYLING */
 .name img {
-	
 	width: 50px;
 	height: 50px;
 }
@@ -136,6 +139,17 @@ text-shadow: -6px -1px 4px rgba(150, 150, 150, 1);
 #work {
 	margin-left: 0;
 	text-align: justify;
+	padding-right: 90px;
+}
+
+#work h3,
+#education h3 {
+	color: #DF7E24;
+}
+
+#work h4,
+#education h4 {
+	color: #EC421A;
 }
 
 
@@ -144,6 +158,8 @@ text-shadow: -6px -1px 4px rgba(150, 150, 150, 1);
 /* FOOTER */
 footer {
 	background: url(../img/dark_wall.png);
+	margin-top: 20px;
+    z-index: 0;
 }
 
 footer p{
@@ -159,7 +175,140 @@ footer p{
 	position: relative;
 	top: -38px;
 	left: -150px;
+	z-index: 0;
 }
+
+
+/* PORTFOLIO LIGHTBOX */
+
+/* Portfolio Gallery Lightbox */
+
+#icons,
+#moon,
+#movie,
+#packaging,
+#website {
+	width: 100%;
+}
+
+.gallery {
+	text-align: center;
+}
+
+
+/* Thumbnail to Trigger */
+
+a.lightbox img {
+height: 150px;
+border: 3px solid black;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 20px;
+}
+
+
+/* Enlarged Lightbox */
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+z-index: 1;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+
+/* Overlays & Center */
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
