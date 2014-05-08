@@ -62,6 +62,13 @@ h3 {
 	text-align: center;
 }
 
+.button.success {
+	background: blue;
+	margin-top: 250px;
+	margin-left: 20px;
+	position-left: 30px;
+}
+
 
 
 /* NO SPRITES MAYBE???? 
