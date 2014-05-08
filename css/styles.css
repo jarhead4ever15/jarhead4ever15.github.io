@@ -36,6 +36,34 @@ body {
 	text-decoration: none;
 }
 
+
+/* 404 Page Navigation */
+
+.breadcrumbs {
+	 background: url(../img/dark_wall.png);
+
+}
+
+.breadcrumbs > * {
+	color: white;
+	font-size: .95em;
+
+}
+
+/* 404 */
+
+.error {
+	font-size: 5.5em;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+h3 {
+	text-align: center;
+}
+
+
+
 /* NO SPRITES MAYBE???? 
 .navigation li {
 	display: inline;
